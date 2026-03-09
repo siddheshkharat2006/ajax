@@ -1,13 +1,26 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+<title>AJAX Search Suggestion</title>
 
-$data = ["Apple","Banana","Mango","Orange","Pineapple","Grapes","Watermelon"];
+<link rel="stylesheet" href="style.css">
 
-$query = $_POST['query'];
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 
-foreach($data as $item){
-    if(stripos($item,$query) !== false){
-        echo "<p>".$item."</p>";
-    }
-}
+</head>
 
-?>
+<body>
+
+<div class="container">
+
+<h2>🔍 Search Suggestion</h2>
+
+<input type="text" id="searchBox" placeholder="Type a fruit name...">
+
+<ul id="suggestionList"></ul>
+
+</div>
+
+</body>
+</html>
