@@ -1,0 +1,13 @@
+<?php
+
+$data = ["Apple","Banana","Mango","Orange","Pineapple","Grapes","Watermelon"];
+
+$query = $_POST['query'];
+
+foreach($data as $item){
+    if(stripos($item,$query) !== false){
+        echo "<p>".$item."</p>";
+    }
+}
+
+?>
